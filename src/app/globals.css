@@ -3,21 +3,69 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Background and Foreground */
+  --background: #f2edd0; /* cor do fundo */
+  --foreground: #402915; /* cor do texto principal */
+  
+  /* Border and Input */
+  --border: #bfa68a; /* borda com tom neutro para combinar */
+  --input: #f9f3e3;  /* input levemente mais claro que o fundo */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Primary */
+  --primary: #bf7c2a; /* cor para o primary */
+  --primary-foreground: #ffffff; /* cor de texto sobre fundo primário */
+
+  /* Secondary */
+  --secondary: #f2d6a2; /* cor para o secondary */
+  --secondary-foreground: #402915; /* cor de texto sobre fundo secundário */
+
+  /* Destructive */
+  --destructive: #c04d2f; /* tom quente para o destructive */
+  --destructive-foreground: #ffffff; /* cor de texto sobre fundo destrutivo */
+
+  /* Muted */
+  --muted: #bfa68a; /* tom neutro para o muted */
+  --muted-foreground: #ffffff; /* cor de texto sobre fundo muted */
+
+  /* Accent */
+  --accent: #d9a05b; /* cor para o accent */
+  --accent-foreground: #402915; /* cor de texto sobre fundo accent */
+
+  /* Popover */
+  --popover: #e6dfc8; /* cor suave para popover */
+  --popover-foreground: #402915; /* cor de texto no popover */
+
+  /* Card */
+  --card: #f5f1db; /* tom suave para o card */
+  --card-foreground: #402915; /* cor de texto no card */
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-spinner {
+  border: 8px solid #f3f3f3; /* Cor do fundo do círculo */
+  border-top: 8px solid #bf7c2a; /* Cor do círculo giratório */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @layer utilities {
