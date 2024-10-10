@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import LogoPNG from '../images/Logo.png';
+import LogoSVG from '../images/Logo.svg';
 import { AlignJustify } from 'lucide-react';
 
 export default function Header() {
@@ -74,9 +73,9 @@ export default function Header() {
   }, []);
 
   return (
-    <header className='fixed top-0 z-10 shadow-md h-[10%] lg:h-[18%] xl:h-[20%] w-full flex flex-col items-center'>
+    <header className='fixed top-0 z-10 shadow-md h-[10%] lg:h-[18%] xl:h-[20%] w-full flex flex-col items-center bg-background'>
       <div className='w-full h-full flex flex-row items-center justify-center bg-background'>
-        <Image src={LogoPNG} alt='Logo' className='w-14 h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:h-32 2xl:w-32' />
+        <LogoSVG className='w-14 h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:h-32 2xl:w-32' />
         <nav className='hidden sm:block'>
           <div className='flex items-center justify-around gap-8'>
             {sections.map((section) => (
