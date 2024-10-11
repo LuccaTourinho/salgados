@@ -8,7 +8,7 @@ import Torta from '../images/bolos-e-tortas/torta.jpg';
 
 export default function Bolos() {
   return (
-    <div className='w-full h-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4'>
+    <div className='w-full h-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4'>
         <div className='relative w-full h-full'>
             <Image
                 src={Bolo1}

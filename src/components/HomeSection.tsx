@@ -19,8 +19,8 @@ export default function HomeSection() {
           />
         </div>
         <div className='flex flex-col w-full h-full justify-start pl-0 pt-12 items-center'>
-          <h1 className='text-4xl text-primary'>Salgados de Vó</h1>
-          <h3 className='text-xl text-secondary'>O sabor da tradição, feito com o carinho de vó.</h3>
+          <h1 className='text-4xl text-primary font-greatVibes'>Salgados de Vó</h1>
+          <h3 className='text-xl text-secondary font-lobster'>O sabor da tradição, feito com o carinho de vó.</h3>
         </div>
       </div>
     </div>

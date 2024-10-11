@@ -26,6 +26,14 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        geistSans: "var(--font-geist-sans)",
+        geistMono: "var(--font-geist-mono)",
+        dancingScript: "var(--font-dancing-script)",
+        greatVibes: "var(--font-great-vibes)",
+        lobster: "var(--font-lobster)",
+        pacifico: "var(--font-pacifico)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

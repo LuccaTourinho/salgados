@@ -1,42 +1,42 @@
 'use client';
 
 import Image from "next/image";
-import Doce1 from '../images/doces/doce1.jpg';
-import Doce2 from '../images/doces/doce2.jpg';
-import Doce3 from '../images/doces/doce3.jpg';
-import Doce4 from '../images/doces/doce4.jpg';
+import Salgado1 from '../images/salgados/salgado1.jpg';
+import Salgado2 from '../images/salgados/salgado2.jpg';
+import Salgado3 from '../images/salgados/salgado3.jpg';
+import Salgado4 from '../images/salgados/salgado4.jpg';
 
-export default function Doces() {
+export default function Salgados() {
   return (
     <div className='w-full h-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4'>
         <div className='relative w-full h-full'>
             <Image
-                src={Doce1}
-                alt="Doce 1"
+                src={Salgado1}
+                alt="Salgado 1"
                 fill
                 style={{ objectFit: 'cover' }}
             />
         </div>
         <div className='relative w-full h-full'>
             <Image
-                src={Doce2}
-                alt="Doce 2"
+                src={Salgado2}
+                alt="Salgado 2"
                 fill
                 style={{ objectFit: 'cover' }}
             />
         </div>
         <div className='relative w-full h-full'>
             <Image
-                src={Doce3}
-                alt="Doce 3"
+                src={Salgado3}
+                alt="Salgado 3"
                 fill
                 style={{ objectFit: 'cover' }}
             />
         </div>
         <div className='relative w-full h-full'>
             <Image
-                src={Doce4}
-                alt="Doce 4"
+                src={Salgado4}
+                alt="Salgado 4"
                 fill
                 style={{ objectFit: 'cover' }}
             />
