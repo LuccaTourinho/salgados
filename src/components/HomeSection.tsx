@@ -10,10 +10,10 @@ export default function HomeSection() {
     >
       <BehindNav />
       <div className='relative h-[90%] lg:h-[82%] xl:h-[80%] w-full '>
-        <div className='absolute -z-10 w-full h-full'>
+        <div className='absolute -z-10 w-full h-full shadow-none'>
           <Image
             src={LogoPNG}
-            alt="Pastel de forno" 
+            alt="Logo" 
             fill
             style={{ objectFit: 'contain' }}
           />
