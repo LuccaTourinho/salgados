@@ -32,7 +32,7 @@ export default function ProductSection() {
       <Suspense fallback={<div>Loading...</div>}>
       <BehindNav />
       <div className='relative h-[90%] lg:h-[82%] xl:h-[80%] w-full'>
-        <div className='flex flex-row justify-around items-center bg-primary h-[10%] py-3'>
+        <div className='flex flex-row justify-around items-center bg-primary h-[10%] p-3'>
         {['Bolos e Tortas', 'Doces', 'Pizzas', 'Salgados'].map((section, index) => (
               <div
                 key={index}
