@@ -28,7 +28,7 @@ export default function ReviewSection() {
   ];
 
   return (
-    <div id='avaliacao' className='w-screen h-screen'>
+    <div id='avaliacao' className='w-screen h-screen px-3'>
       <Suspense fallback={<div>Loading...</div>}>
         <BehindNav />
         <div className='w-full h-[90%] flex flex-col lg:flex-row items-center justify-center  border-2 border-border rounded-xl bg-card '>
