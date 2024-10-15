@@ -22,8 +22,8 @@ const Review: React.FunctionComponent<IReviewProps> = (props) => {
             />
           </div>
           <div className="flex flex-col justify-center items-center w-full h-full p-3 text-card-foreground">
-            <p className="text-xl font-geistSans text-wrap">&quot;{props.text}&quot;</p>
-            <h1 className="text-3xl text-accent font-lobster">{props.name}</h1>
+            <p className="text-sm font-geistSans text-center">&quot;{props.text}&quot;</p>
+            <h1 className="text-xl text-accent font-lobster">{props.name}</h1>
           </div>  
         </div>
     )

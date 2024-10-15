@@ -37,11 +37,11 @@ export default function ProductSection() {
               <div
                 key={index}
                 className={`
-                  flex items-center justify-center 
-                  text-xl font-pacifico
+                  flex items-center justify-center
+                  text-sm font-pacifico
                   ${activeSection === index ? 'text-muted-foreground bg-muted' : 'text-secondary-foreground bg-secondary hover:cursor-pointer'}
                   rounded-lg 
-                  px-4 py-2
+                  px-2 py-2
                 `}
                 onClick={() => handleSectionClick(index)} 
               >

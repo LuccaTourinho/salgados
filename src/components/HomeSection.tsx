@@ -6,8 +6,7 @@ import Image from 'next/image';
 
 export default function HomeSection() {
   return (
-    <div id='home' className='w-screen h-screen'
-    >
+    <div id='home' className='w-screen h-screen'>
       <BehindNav />
       <div className='relative h-[90%] lg:h-[82%] xl:h-[80%] w-full '>
         <div className='absolute -z-10 w-full h-full shadow-none'>
@@ -15,7 +14,7 @@ export default function HomeSection() {
             src={LogoPNG}
             alt="Logo" 
             fill
-            style={{ objectFit: 'contain' }}
+            className='object-contain'
           />
         </div>
         <div className='flex flex-col w-full h-full justify-start pl-0 pt-12 items-center'>
