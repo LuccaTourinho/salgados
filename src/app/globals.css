@@ -63,17 +63,6 @@ body {
   animation: spin 1s linear infinite;
 }
 
-.carousel {
-  display: flex;
-  width: 400%; /* Considerando 4 seções */
-  transition: transform 0.5s ease;
-}
-
-.carousel-item {
-  min-width: 100%; /* Cada item ocupa 100% da largura da tela */
-  height: 100%; /* Altura total da área visível */
-}
-
 
 @keyframes spin {
   0% { transform: rotate(0deg); }

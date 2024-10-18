@@ -1,7 +1,9 @@
 'use client';
 
-import {useState} from 'react'
-import BehindNav from './BehindNav'
+
+import { useState } from 'react';
+import { useIntersection } from '../hooks/useIntersection';
+import BehindNav from './BehindNav';
 import Bolos from './Bolos';
 import Doces from './Doces';
 import Pizzas from './Pizzas';
@@ -10,6 +12,7 @@ import { Suspense } from 'react';
 
 export default function ProductSection() {
   const [activeSection, setActiveSection] = useState<number>(0); 
+  const { isVisible, elementRef } = useIntersection(0.3);
 
   const handleSectionClick = (index: number) => {
     setActiveSection(index);
@@ -28,7 +31,7 @@ export default function ProductSection() {
   };
 
   return (
-    <div id='produtos' className='w-screen h-screen'>
+    <div ref={elementRef} id='produtos' className={`w-screen h-screen transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
       <Suspense fallback={<div>Loading...</div>}>
       <BehindNav />
       <div className='relative h-[90%] lg:h-[82%] xl:h-[80%] w-full'>

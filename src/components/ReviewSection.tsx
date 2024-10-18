@@ -1,11 +1,14 @@
 'use client';
 
+import { useIntersection } from '../hooks/useIntersection';
 import BehindNav from './BehindNav'
 import { Suspense } from 'react';
 import Review from './Review';
 import Bolo1 from '../images/bolos-e-tortas/bolo1.jpg';
 
 export default function ReviewSection() {
+  const { isVisible, elementRef } = useIntersection(0.3);
+
   const clients = [
     {
       src: Bolo1,
@@ -28,7 +31,7 @@ export default function ReviewSection() {
   ];
 
   return (
-    <div id='avaliacao' className='w-screen h-screen px-3'>
+    <div ref={elementRef} id='avaliacao' className={`w-screen h-screen px-3 transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
       <Suspense fallback={<div>Loading...</div>}>
         <BehindNav />
         <div className='w-full h-[90%] flex flex-col lg:flex-row items-center justify-center  border-2 border-border rounded-xl bg-card py-6'>
